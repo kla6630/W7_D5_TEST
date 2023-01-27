@@ -1,0 +1,16 @@
+.partners_logos_container {
+  height: 90px;
+  width: 200px;
+  background-color: $my-partners-logos-bg-color;
+  border-style: solid;
+  border-color: $my-border-bottom-color;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.partners_logos_container:hover {
+  cursor: pointer;
+  scale: 105%;
+}
