@@ -314,24 +314,6 @@ h3 {
   border-radius: 18px 18px 18px 18px;
 }
 
-.partners_logos_container {
-  height: 90px;
-  width: 200px;
-  background-color: #3b4833;
-  border-style: solid;
-  border-color: #2a3324;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-}
-
-.partners_logos_container:hover {
-  cursor: pointer;
-  scale: 105%;
-}
-
 /*TEXT FEATURES*/
 /*FONTS*/
 /*h1*/
@@ -356,7 +338,7 @@ h3 {
   margin: 5%;
 }
 .my_carousel_card img {
-  border-radius: 18px 18px 0% 0%;
+  border-radius: 18px 18px 18px 18px;
   background-color: rgb(157, 191, 227);
 }
 

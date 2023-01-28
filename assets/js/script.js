@@ -10,12 +10,12 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
   .then(function (data) {
     let albums = data.data;
     console.log(albums);
-    let selectedIds = [13636688, 3590194, 3590186, 3599714];
+    let selectedIds = [13636688, 3590194, 1877068657, 3599714];
     let filteredSongs = albums.filter((song) => selectedIds.includes(song.id));
     let card = document.getElementById("container-fav-songs");
     filteredSongs.forEach((song) => {
       card.innerHTML += `
-      <div class="col-5 col-sm-4 col-md-3 d-flex">
+      <div class="col-5 col-sm-4 col-md-3 my-2 d-flex">
       <div class="card my_card" style="width: 18rem">
         <img
           src="${song.album.cover_big}"
@@ -23,10 +23,10 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
           alt="${song.album.title} pic"
           style="height: 65%"
         />
-        <div class="card-body d-flex flex-column justify-content-between">
+        <div class="card-body d-flex flex-column justify-content-center">
           <h5 class="card-title" id="title">${song.title}</h5>
-          <p class="card-text">${"Album: " + song.album.title}</p>
-          <p class="card-text">${"Artist: " + song.artist.name}</p>
+          <p class="card-text">${song.album.title}</p>
+          
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
   });
 
 //MY FAVOURITE SONG//
-fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
+fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=guns`)
   .then(function (data) {
     console.log(`try`, data);
 
@@ -46,7 +46,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
   .then(function (data) {
     let albums = data.data;
     console.log(albums);
-    let selectedIds = [13636688];
+    let selectedIds = [518458092];
     let filteredSongs = albums.filter((song) => selectedIds.includes(song.id));
     let card = document.getElementById("container-fav-song");
     filteredSongs.forEach((song) => {
@@ -68,7 +68,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
   });
 
 //MY FAVOURITE ALBUMS CAROUSEL//
-fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
+fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=queen`)
   .then(function (data) {
     console.log(`try`, data);
 
@@ -79,7 +79,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
   .then(function (data) {
     let albums = data.data;
     console.log(albums);
-    let selectedIds = [13636688];
+    let selectedIds = [9997018];
     let filteredSongs = albums.filter((song) => selectedIds.includes(song.id));
     let card = document.getElementById("my_carousel_card_01");
     filteredSongs.forEach((song) => {
@@ -89,7 +89,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
       class="d-block w-100"
       alt="..."
     />
-    <div class="card-body">
+    <div class="card-body d-none">
       <h5>
         ${song.album.title}
       </h5>
@@ -123,7 +123,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=beatles`)
       class="d-block w-100"
       alt="..."
     />
-    <div class="card-body">
+    <div class="card-body d-none">
       <h5>
         ${song.album.title}
       </h5>
@@ -157,7 +157,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=guns`)
       class="d-block w-100"
       alt="..."
     />
-    <div class="card-body">
+    <div class="card-body d-none">
       <h5>
         ${song.album.title}
       </h5>
@@ -191,7 +191,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=adele`)
       class="d-block w-100"
       alt="..."
     />
-    <div class="card-body">
+    <div class="card-body d-none">
       <h5>
         ${song.album.title}
       </h5>
@@ -225,7 +225,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=anastacia`)
       class="d-block w-100"
       alt="..."
     />
-    <div class="card-body">
+    <div class="card-body d-none">
       <h5>
         ${song.album.title}
       </h5>
@@ -259,7 +259,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=aretha`)
       class="d-block w-100"
       alt="..."
     />
-    <div class="card-body">
+    <div class="card-body d-none">
       <h5>
         ${song.album.title}
       </h5>
