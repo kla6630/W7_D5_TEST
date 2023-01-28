@@ -2,11 +2,13 @@
 .my_spotlight_card {
   height: auto;
   min-width: 270px;
+  max-width: 500px;
   margin: 0 auto;
   border-radius: 20px;
   border: solid 2px $my-border-bottom-color;
   cursor: pointer;
   background-color: $my-brightest-one;
+  
   h5,
   p {
     margin: 5%;

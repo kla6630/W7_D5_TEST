@@ -17,7 +17,7 @@ nav {
 }
 
 .my_logo {
-  width: 110px;
+  width: 50px;
   height: auto;
   color: $my-nav-icons-text-color !important;
 }
@@ -27,7 +27,7 @@ nav {
 }
 
 .my_nav_link:hover {
-  color: $my-brightest-one !important;
+  color: $my-hover-text-color !important;
 }
 
 .nav_social_icons {
@@ -36,7 +36,8 @@ nav {
 }
 
 .nav_social_icons:hover {
-  color: $my-brightest-one !important;
+  color: $my-hover-text-color !important;
+
   scale: 120%;
 }
 

@@ -36,7 +36,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
               <a href="#" class="nav-item nav-link my_nav_link" tabindex="-1"
-                >.social</a
+                >social</a
               ><a href="#" class="nav-item nav-link nav_social_icons"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,11 +78,11 @@
               ></a>
             </div>
             <div class="navbar-nav ms-auto">
-              <a href="#" class="nav-item nav-link my_nav_link">.portfolio</a>
-              <a href="#" class="nav-item nav-link my_nav_link">.blog</a>
-              <a href="#" class="nav-item nav-link my_nav_link">.about me</a>
-              <a href="#" class="nav-item nav-link nav_button">.contact me</a>
-              <div class="nav-item nav-link nav_button" id="toggle-btn"></div>
+              <a href="#" class="nav-item nav-link my_nav_link">search</a>
+              <a href="#" class="nav-item nav-link my_nav_link">blog</a>
+              <a href="#" class="nav-item nav-link my_nav_link">about</a>
+              <a href="#" class="nav-item nav-link nav_button">contacts</a>
+              <!--<div class="nav-item nav-link nav_button" id="toggle-btn"></div>-->
             </div>
           </div>
         </div>
@@ -93,14 +93,19 @@
         <div
           class="col d-flex flex-column flex-nowrap justify-content-center align-content-center align-items-center"
         >
-          <div class="raw"><h1>Claudio Pinna</h1></div>
-          <div class="raw"><h2>.full stack web developer</h2></div>
+          <div class="raw"><h1>Material Design Experiments</h1></div>
+          <div class="raw"><h2>Claudio's music playlist</h2></div>
         </div>
       </div>
     </header>
 
     <main>
-      <!--Inizio sezione "My Favourite Songs"-->
+      <!--Inizio sezione "ALERT 01"-->
+      <div id="liveAlertPlaceholder"></div>
+      <button type="button" class="btn btn-primary" id="liveAlertBtn">
+        Show live alert
+      </button>
+      <!--Inizio sezione "ALERT 01"-->
       <div class="container mt-4">
         <h3>My favourite songs of Muse</h3>
         <div class="row row-cols-3" id="container-fav-songs"></div>
@@ -108,16 +113,12 @@
       <!--Fine sezione "My Favourite Songs"-->
 
       <!--Inizio sezione "My Favourite Song"-->
-      <!--Inizio sezione "Primo Piano"-->
+
       <div class="container mt-4">
         <h3>My favourite song</h3>
-        <div class="my_spotlight_card mb-3" id="container-fav-song">
-        <div class="row g-0">
-          <div class="col-md-8"></div>
-        </div>
+        <div class="card my_spotlight_card" id="container-fav-song"></div>
       </div>
 
-      <!--Fine sezione "Primo Piano"-->
       <!--Fine sezione "My Favourite Song"-->
 
       <!-- INIZIO sezione CAROUSEL -->
@@ -251,7 +252,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="./assets/js/dark_mode.js"></script>
-  <script src="./assets/js/my_favourite_songs.js"></script>
-  <script src="./assets/js/my_favourite_song.js"></script>
-  <script src="./assets/js/my_fav_albums_carousel.js"></script>
+  <script src="./assets/js/script.js"></script>
 </html>
