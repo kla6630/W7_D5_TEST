@@ -100,63 +100,81 @@
     </header>
 
     <main>
-      <!--Inizio sezione "My Favourite Song"-->
-      <div class="container mt-4">
-        <h3>My favourite songs</h3>
-        <div class="row row-cols-3" id="container-fav-songs"></div>
-      </div>
-      <!--Fine sezione "My Favourite Song"-->
-
       <!--Inizio sezione "My Favourite Songs"-->
       <div class="container mt-4">
-        <h3>My favourite song</h3>
-        <div class="row row-cols-3" id="container-fav-song"></div>
+        <h3>My favourite songs of Muse</h3>
+        <div class="row row-cols-3" id="container-fav-songs"></div>
       </div>
       <!--Fine sezione "My Favourite Songs"-->
 
-      <!-- INIZIO sezione CAROUSEL -->
+      <!--Inizio sezione "My Favourite Song"-->
+      <!--Inizio sezione "Primo Piano"-->
       <div class="container mt-4">
         <h3>My favourite song</h3>
-        <div class="row row-cols-3" id="container-my-fav-albums-carousel">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-           
-          </div>
+        <div class="my_spotlight_card mb-3" id="container-fav-song">
+        <div class="row g-0">
+          <div class="col-md-8"></div>
         </div>
       </div>
+
+      <!--Fine sezione "Primo Piano"-->
+      <!--Fine sezione "My Favourite Song"-->
+
+      <!-- INIZIO sezione CAROUSEL -->
+      <div class="container mt-3 mb-5">
+        <h3>My Favourite Albums</h3>
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade carousel-inner2 mt-3"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+              <div class="my_carousel_card" id="my_carousel_card_01"></div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+              <div class="my_carousel_card" id="my_carousel_card_02"></div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+              <div class="my_carousel_card" id="my_carousel_card_03"></div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+              <div class="my_carousel_card" id="my_carousel_card_04"></div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+              <div class="my_carousel_card" id="my_carousel_card_05"></div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+              <div class="my_carousel_card" id="my_carousel_card_06"></div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
       <!-- FINE CAROUSEL -->
     </main>
     <!-- INIZIO FOOTER -->

@@ -14,17 +14,19 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
     let card = document.getElementById("container-fav-song");
     filteredSongs.forEach((song) => {
       card.innerHTML += `
-      <div class="card bg-dark text-white">
       <img
-        src="${song.album.cover_big}"
-        class="card-img"
-        alt="${song.album.title} pic"
-      />
-      <div class="card-img-overlay">
-        <h5 class="card-title">${song.title}</h5>
-        <p class="card-text">${"Album: " + song.album.title}</p>
-        <p class="card-text">${"Artist: " + song.artist.name}</p>
+      src="${song.album.cover_big}"
+      class="img-fluid rounded-start"
+      alt="${song.album.title}"
+    />
+    
+    <div class="col-md-4">
+      <div class="my_spotlight_card_body">
+        <h5>${song.title}</h5>
+        <p>${song.album.title}</p>
+        <p class="card-text">${song.artist.name}</p>
       </div>
-    </div>`;
+    </div>
+    `;
     });
   });
